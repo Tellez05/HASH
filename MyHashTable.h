@@ -1,5 +1,5 @@
 #pragma once
-
+#include "MyLinkedList.h"
 
 class MyHashTable{
     public: 
