@@ -2,6 +2,26 @@
 
 MyHashTable::MyHashTable(){
     this->size=0; 
-    this->sizeA = 7; 
+    this->sizeA = 11; 
     this->tabla = new MyLinkedList[this->sizeA];
 };
+
+
+MyHashTable::~MyHashTable(){
+    
+}
+
+int MyHashTable::getPos(string key){
+    size_t hashC=hash<string>{}(key);
+    int hashCode=static_cast<int>(hashC);
+    return abs(hashCode)%this->sizeA;
+}
+
+
+void MyHashTable::put(string key, int value){
+    
+}
+
+int MyHashTable::get(string key){
+
+}
